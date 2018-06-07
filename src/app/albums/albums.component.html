@@ -1,0 +1,10 @@
+<div class="container">
+  <div class='col-lg-3' *ngFor="let a of albums">
+    <div class="row">
+      {{a.title}} - {{a.albumId}}
+    </div>
+    <div class="row" [style]="">
+      <img [src]="a.thumbnailUrl">
+    </div>
+  </div>
+</div>
